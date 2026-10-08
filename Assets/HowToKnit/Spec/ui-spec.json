@@ -1,0 +1,706 @@
+{
+  "reference_resolution": [
+    1920,
+    1080
+  ],
+  "sprite_scale": "UI/ and Icons/ drawn @2x, imported at 200 PPU so they show at 1x on a 100-PPU canvas",
+  "colors": {
+    "ink": "#1a1c22",
+    "paper": "#f6f7fb",
+    "card": "#fbfcfe",
+    "white": "#ffffff",
+    "chip": "#dfe8fb",
+    "hover": "#e9eefa",
+    "yarn": "#3b72d9",
+    "muted": "#4d5566",
+    "error": "#9e2b55",
+    "grid_rows": "rgba(214,112,166,0.13)",
+    "grid_columns": "rgba(66,108,210,0.13)",
+    "grid_size_px": 24
+  },
+  "fonts": {
+    "Silkscreen-Regular": "labels, buttons, tabs, URL",
+    "Silkscreen-Bold": "headings",
+    "DMMono-Regular": "body, captions, messages",
+    "DMMono-Medium": "spare weight"
+  },
+  "type_sizes": {
+    "title": 172,
+    "page_h1": 64,
+    "lesson_h1": 46,
+    "panel_title": 34,
+    "button": 24,
+    "tab": 22,
+    "url": 20,
+    "label": 16,
+    "body": 21,
+    "caption": 18,
+    "small": 15
+  },
+  "lines": {
+    "outline_px": 2,
+    "selected_px": 3,
+    "keycap_px": 3,
+    "corner_radius": {
+      "card": 22,
+      "game_card": 24,
+      "dialog": 26,
+      "button": 16,
+      "keycap": 14,
+      "row": 12,
+      "step_box": 9,
+      "tick": 4
+    }
+  },
+  "layout": {
+    "chrome": {
+      "toolbar": [
+        0,
+        0,
+        1920,
+        80
+      ],
+      "tab_row": [
+        0,
+        80,
+        1920,
+        84
+      ],
+      "content_top": 164,
+      "tabs_x": 60,
+      "tab_active_h": 56,
+      "tab_h": 54
+    },
+    "title": {
+      "heading_how_to": [
+        120,
+        244
+      ],
+      "heading_knit": [
+        120,
+        399
+      ],
+      "buttons": {
+        "start": [
+          120,
+          628,
+          540,
+          76
+        ],
+        "settings": [
+          120,
+          722,
+          540,
+          76
+        ]
+      },
+      "back_card": {
+        "rect": [
+          1160,
+          254,
+          640,
+          370
+        ],
+        "css_rotate_deg": 5,
+        "opacity": 0.55,
+        "art": "title_card_knit",
+        "fit": "contain, 18px padding, shifted up 12%"
+      },
+      "front_card": {
+        "rect": [
+          990,
+          374,
+          760,
+          480
+        ],
+        "css_rotate_deg": -3,
+        "art": "title_card_caston",
+        "fit": "contain, scale 1.18, shifted down 28px"
+      }
+    },
+    "lesson_select": {
+      "h1": [
+        60,
+        204
+      ],
+      "subtitle": [
+        60,
+        286
+      ],
+      "grid_top": 330,
+      "card": [
+        580,
+        286
+      ],
+      "thumb_h": 168,
+      "gap": 30,
+      "columns": 3,
+      "detail_bar": [
+        60,
+        968,
+        1800,
+        104
+      ]
+    },
+    "gameplay": {
+      "breadcrumb": [
+        60,
+        188
+      ],
+      "h1": [
+        60,
+        218
+      ],
+      "animation_card": [
+        60,
+        282,
+        1280,
+        720
+      ],
+      "step_panel": [
+        1380,
+        282,
+        480,
+        206
+      ],
+      "stage_list": [
+        1380,
+        508,
+        480,
+        248
+      ],
+      "stitch_counter": [
+        1380,
+        778,
+        480,
+        22
+      ],
+      "status_line": [
+        60,
+        1016
+      ],
+      "messages": {
+        "right_edge": 1831,
+        "bottom": 999,
+        "bubble_w": 440,
+        "gap": 16
+      },
+      "key_prompt_centres_pct": {
+        "ready_yarn": [
+          22,
+          30
+        ],
+        "needle_under": [
+          84,
+          28
+        ],
+        "needle_over": [
+          84,
+          28
+        ],
+        "pull_through_tighten": [
+          85,
+          36
+        ]
+      }
+    }
+  },
+  "motion": {
+    "button_hover": "face moves (-3,-3)px, hard ink shadow 5px down-right",
+    "keycap_press_blink_s": 0.3,
+    "keycap_pressed_drop_px": 7,
+    "get_ready_alpha": 0.6,
+    "dog_walk": {
+      "duration_s": 4.2,
+      "pause_after_s": 0.7,
+      "x_keys": [
+        [
+          0,
+          2000
+        ],
+        [
+          0.34,
+          470
+        ],
+        [
+          0.66,
+          330
+        ],
+        [
+          1.0,
+          -1450
+        ]
+      ],
+      "ease": "ease-in-out per segment",
+      "squish": {
+        "scale_x": 0.8,
+        "in": [
+          0.36,
+          0.44
+        ],
+        "hold": [
+          0.44,
+          0.56
+        ],
+        "out": [
+          0.56,
+          0.64
+        ]
+      },
+      "bob": {
+        "height_px": 18,
+        "period_s": 0.5,
+        "rotate_deg": -1.5
+      },
+      "opacity": 0.22,
+      "blur_px": 24
+    },
+    "messages": {
+      "start_after_stitches": 3,
+      "slot_s": 3.2,
+      "typing_s": 1.3,
+      "grow_s": 0.36,
+      "slide_s": 0.44,
+      "slide_from_px": 480,
+      "stay": "until lesson complete"
+    },
+    "lesson_card_selected_lift_px": 6,
+    "stitches_per_lesson": 25
+  },
+  "sprites": {
+    "card": {
+      "size_1x": [
+        96,
+        96
+      ],
+      "border_2x_LBRT": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "imageType": "Sliced",
+      "use": "Panels, lesson cards, dialog, title cards"
+    },
+    "card_white": {
+      "size_1x": [
+        96,
+        96
+      ],
+      "border_2x_LBRT": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "imageType": "Sliced",
+      "use": "Game card (animation frame)"
+    },
+    "card_selected": {
+      "size_1x": [
+        96,
+        96
+      ],
+      "border_2x_LBRT": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "imageType": "Sliced",
+      "use": "Selected lesson card"
+    },
+    "card_dashed": {
+      "size_1x": [
+        96,
+        96
+      ],
+      "border_2x_LBRT": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "imageType": "Tiled",
+      "use": "Locked lesson card outline (Image Type: Tiled)"
+    },
+    "button_dark": {
+      "size_1x": [
+        80,
+        76
+      ],
+      "border_2x_LBRT": [
+        36,
+        36,
+        36,
+        36
+      ],
+      "imageType": "Sliced",
+      "use": "Primary button; also the hard hover shadow"
+    },
+    "button_light": {
+      "size_1x": [
+        80,
+        76
+      ],
+      "border_2x_LBRT": [
+        36,
+        36,
+        36,
+        36
+      ],
+      "imageType": "Sliced",
+      "use": "Secondary button"
+    },
+    "button_dashed": {
+      "size_1x": [
+        64,
+        68
+      ],
+      "border_2x_LBRT": [
+        36,
+        36,
+        36,
+        36
+      ],
+      "imageType": "Tiled",
+      "use": "Locked button outline (Image Type: Tiled)"
+    },
+    "pill": {
+      "size_1x": [
+        48,
+        34
+      ],
+      "border_2x_LBRT": [
+        34,
+        32,
+        34,
+        32
+      ],
+      "imageType": "Sliced",
+      "use": "Lesson / Step chips, Hold/Press labels (add outline variant below)"
+    },
+    "pill_outline": {
+      "size_1x": [
+        48,
+        34
+      ],
+      "border_2x_LBRT": [
+        34,
+        32,
+        34,
+        32
+      ],
+      "imageType": "Sliced",
+      "use": "Key-prompt label under keycaps"
+    },
+    "url_bar": {
+      "size_1x": [
+        64,
+        48
+      ],
+      "border_2x_LBRT": [
+        50,
+        46,
+        50,
+        46
+      ],
+      "imageType": "Sliced",
+      "use": "Address bar"
+    },
+    "tab_active": {
+      "size_1x": [
+        80,
+        56
+      ],
+      "border_2x_LBRT": [
+        36,
+        4,
+        36,
+        36
+      ],
+      "imageType": "Sliced",
+      "use": "Active folder tab (sits 2px over the nav rule)"
+    },
+    "tab_hover": {
+      "size_1x": [
+        80,
+        54
+      ],
+      "border_2x_LBRT": [
+        32,
+        4,
+        32,
+        32
+      ],
+      "imageType": "Sliced",
+      "use": "Inactive tab hover"
+    },
+    "chrome_button_hover": {
+      "size_1x": [
+        52,
+        52
+      ],
+      "border_2x_LBRT": [
+        26,
+        26,
+        26,
+        26
+      ],
+      "imageType": "Sliced",
+      "use": "Back/forward/reload hover"
+    },
+    "keycap_up": {
+      "size_1x": [
+        88,
+        88
+      ],
+      "border_2x_LBRT": [
+        34,
+        48,
+        34,
+        34
+      ],
+      "imageType": "Sliced",
+      "use": "Keycap, up (Press prompt blinks between up/down)"
+    },
+    "keycap_down": {
+      "size_1x": [
+        88,
+        88
+      ],
+      "border_2x_LBRT": [
+        34,
+        34,
+        34,
+        48
+      ],
+      "imageType": "Sliced",
+      "use": "Keycap, pressed (same 88px box, cap drawn 7px lower)"
+    },
+    "keycap_small": {
+      "size_1x": [
+        52,
+        52
+      ],
+      "border_2x_LBRT": [
+        24,
+        32,
+        24,
+        24
+      ],
+      "imageType": "Sliced",
+      "use": "Inline key in the step panel"
+    },
+    "bubble": {
+      "size_1x": [
+        96,
+        80
+      ],
+      "border_2x_LBRT": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "imageType": "Sliced",
+      "use": "Chat bubble (tail corner bottom-right)"
+    },
+    "shadow_soft": {
+      "size_1x": [
+        200,
+        200
+      ],
+      "border_2x_LBRT": [
+        196,
+        196,
+        196,
+        196
+      ],
+      "imageType": "Sliced",
+      "use": "Soft drop shadow behind cards/bubbles. Tint ink at 25-40% alpha, offset down 18px, extend 52px past the box"
+    },
+    "row_highlight": {
+      "size_1x": [
+        32,
+        32
+      ],
+      "border_2x_LBRT": [
+        26,
+        26,
+        26,
+        26
+      ],
+      "imageType": "Sliced",
+      "use": "Current stage row"
+    },
+    "step_box": {
+      "size_1x": [
+        34,
+        34
+      ],
+      "border_2x_LBRT": [
+        22,
+        22,
+        22,
+        22
+      ],
+      "imageType": "Sliced",
+      "use": "Stage number box"
+    },
+    "step_box_done": {
+      "size_1x": [
+        34,
+        34
+      ],
+      "border_2x_LBRT": [
+        22,
+        22,
+        22,
+        22
+      ],
+      "imageType": "Sliced",
+      "use": "Finished stage box (white check on top)"
+    },
+    "tick_empty": {
+      "size_1x": [
+        22,
+        22
+      ],
+      "border_2x_LBRT": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "imageType": "Sliced",
+      "use": "Stitch counter / lesson progress, empty"
+    },
+    "tick_filled": {
+      "size_1x": [
+        22,
+        22
+      ],
+      "border_2x_LBRT": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "imageType": "Sliced",
+      "use": "Stitch counter / lesson progress, filled"
+    },
+    "progress_track": {
+      "size_1x": [
+        40,
+        12
+      ],
+      "border_2x_LBRT": [
+        14,
+        10,
+        14,
+        10
+      ],
+      "imageType": "Sliced",
+      "use": "Step progress bar outline"
+    },
+    "progress_fill": {
+      "size_1x": [
+        40,
+        8
+      ],
+      "border_2x_LBRT": [
+        10,
+        6,
+        10,
+        6
+      ],
+      "imageType": "Sliced",
+      "use": "Step progress fill (Image Type: Filled, Horizontal also works)"
+    },
+    "window_dot": {
+      "size_1x": [
+        16,
+        16
+      ],
+      "border_2x_LBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "imageType": "Simple",
+      "use": "Browser window dot"
+    },
+    "typing_dot": {
+      "size_1x": [
+        10,
+        10
+      ],
+      "border_2x_LBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "imageType": "Simple",
+      "use": "Typing indicator dot"
+    },
+    "pixel": {
+      "size_1x": [
+        4,
+        4
+      ],
+      "border_2x_LBRT": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "imageType": "Sliced",
+      "use": "White 4px; tint for rules/lines"
+    },
+    "card_fill": {
+      "size_1x": [
+        96,
+        96
+      ],
+      "border_2x_LBRT": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "imageType": "Sliced",
+      "use": "White rounded fill; use as a Mask shape or tint for card backgrounds"
+    },
+    "card_outline": {
+      "size_1x": [
+        96,
+        96
+      ],
+      "border_2x_LBRT": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "imageType": "Sliced",
+      "use": "Outline only; drawn on top of masked art"
+    },
+    "card_outline_selected": {
+      "size_1x": [
+        96,
+        96
+      ],
+      "border_2x_LBRT": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "imageType": "Sliced",
+      "use": "Selected lesson outline"
+    }
+  }
+}

@@ -1,0 +1,436 @@
+{
+  "card": {
+    "size_1x": [
+      96,
+      96
+    ],
+    "border_2x_LBRT": [
+      48,
+      48,
+      48,
+      48
+    ],
+    "imageType": "Sliced",
+    "use": "Panels, lesson cards, dialog, title cards"
+  },
+  "card_white": {
+    "size_1x": [
+      96,
+      96
+    ],
+    "border_2x_LBRT": [
+      48,
+      48,
+      48,
+      48
+    ],
+    "imageType": "Sliced",
+    "use": "Game card (animation frame)"
+  },
+  "card_selected": {
+    "size_1x": [
+      96,
+      96
+    ],
+    "border_2x_LBRT": [
+      48,
+      48,
+      48,
+      48
+    ],
+    "imageType": "Sliced",
+    "use": "Selected lesson card"
+  },
+  "card_dashed": {
+    "size_1x": [
+      96,
+      96
+    ],
+    "border_2x_LBRT": [
+      48,
+      48,
+      48,
+      48
+    ],
+    "imageType": "Tiled",
+    "use": "Locked lesson card outline (Image Type: Tiled)"
+  },
+  "button_dark": {
+    "size_1x": [
+      80,
+      76
+    ],
+    "border_2x_LBRT": [
+      36,
+      36,
+      36,
+      36
+    ],
+    "imageType": "Sliced",
+    "use": "Primary button; also the hard hover shadow"
+  },
+  "button_light": {
+    "size_1x": [
+      80,
+      76
+    ],
+    "border_2x_LBRT": [
+      36,
+      36,
+      36,
+      36
+    ],
+    "imageType": "Sliced",
+    "use": "Secondary button"
+  },
+  "button_dashed": {
+    "size_1x": [
+      64,
+      68
+    ],
+    "border_2x_LBRT": [
+      36,
+      36,
+      36,
+      36
+    ],
+    "imageType": "Tiled",
+    "use": "Locked button outline (Image Type: Tiled)"
+  },
+  "pill": {
+    "size_1x": [
+      48,
+      34
+    ],
+    "border_2x_LBRT": [
+      34,
+      32,
+      34,
+      32
+    ],
+    "imageType": "Sliced",
+    "use": "Lesson / Step chips, Hold/Press labels (add outline variant below)"
+  },
+  "pill_outline": {
+    "size_1x": [
+      48,
+      34
+    ],
+    "border_2x_LBRT": [
+      34,
+      32,
+      34,
+      32
+    ],
+    "imageType": "Sliced",
+    "use": "Key-prompt label under keycaps"
+  },
+  "url_bar": {
+    "size_1x": [
+      64,
+      48
+    ],
+    "border_2x_LBRT": [
+      50,
+      46,
+      50,
+      46
+    ],
+    "imageType": "Sliced",
+    "use": "Address bar"
+  },
+  "tab_active": {
+    "size_1x": [
+      80,
+      56
+    ],
+    "border_2x_LBRT": [
+      36,
+      4,
+      36,
+      36
+    ],
+    "imageType": "Sliced",
+    "use": "Active folder tab (sits 2px over the nav rule)"
+  },
+  "tab_hover": {
+    "size_1x": [
+      80,
+      54
+    ],
+    "border_2x_LBRT": [
+      32,
+      4,
+      32,
+      32
+    ],
+    "imageType": "Sliced",
+    "use": "Inactive tab hover"
+  },
+  "chrome_button_hover": {
+    "size_1x": [
+      52,
+      52
+    ],
+    "border_2x_LBRT": [
+      26,
+      26,
+      26,
+      26
+    ],
+    "imageType": "Sliced",
+    "use": "Back/forward/reload hover"
+  },
+  "keycap_up": {
+    "size_1x": [
+      88,
+      88
+    ],
+    "border_2x_LBRT": [
+      34,
+      48,
+      34,
+      34
+    ],
+    "imageType": "Sliced",
+    "use": "Keycap, up (Press prompt blinks between up/down)"
+  },
+  "keycap_down": {
+    "size_1x": [
+      88,
+      88
+    ],
+    "border_2x_LBRT": [
+      34,
+      34,
+      34,
+      48
+    ],
+    "imageType": "Sliced",
+    "use": "Keycap, pressed (same 88px box, cap drawn 7px lower)"
+  },
+  "keycap_small": {
+    "size_1x": [
+      52,
+      52
+    ],
+    "border_2x_LBRT": [
+      24,
+      32,
+      24,
+      24
+    ],
+    "imageType": "Sliced",
+    "use": "Inline key in the step panel"
+  },
+  "bubble": {
+    "size_1x": [
+      96,
+      80
+    ],
+    "border_2x_LBRT": [
+      48,
+      48,
+      48,
+      48
+    ],
+    "imageType": "Sliced",
+    "use": "Chat bubble (tail corner bottom-right)"
+  },
+  "shadow_soft": {
+    "size_1x": [
+      200,
+      200
+    ],
+    "border_2x_LBRT": [
+      196,
+      196,
+      196,
+      196
+    ],
+    "imageType": "Sliced",
+    "use": "Soft drop shadow behind cards/bubbles. Tint ink at 25-40% alpha, offset down 18px, extend 52px past the box"
+  },
+  "row_highlight": {
+    "size_1x": [
+      32,
+      32
+    ],
+    "border_2x_LBRT": [
+      26,
+      26,
+      26,
+      26
+    ],
+    "imageType": "Sliced",
+    "use": "Current stage row"
+  },
+  "step_box": {
+    "size_1x": [
+      34,
+      34
+    ],
+    "border_2x_LBRT": [
+      22,
+      22,
+      22,
+      22
+    ],
+    "imageType": "Sliced",
+    "use": "Stage number box"
+  },
+  "step_box_done": {
+    "size_1x": [
+      34,
+      34
+    ],
+    "border_2x_LBRT": [
+      22,
+      22,
+      22,
+      22
+    ],
+    "imageType": "Sliced",
+    "use": "Finished stage box (white check on top)"
+  },
+  "tick_empty": {
+    "size_1x": [
+      22,
+      22
+    ],
+    "border_2x_LBRT": [
+      12,
+      12,
+      12,
+      12
+    ],
+    "imageType": "Sliced",
+    "use": "Stitch counter / lesson progress, empty"
+  },
+  "tick_filled": {
+    "size_1x": [
+      22,
+      22
+    ],
+    "border_2x_LBRT": [
+      12,
+      12,
+      12,
+      12
+    ],
+    "imageType": "Sliced",
+    "use": "Stitch counter / lesson progress, filled"
+  },
+  "progress_track": {
+    "size_1x": [
+      40,
+      12
+    ],
+    "border_2x_LBRT": [
+      14,
+      10,
+      14,
+      10
+    ],
+    "imageType": "Sliced",
+    "use": "Step progress bar outline"
+  },
+  "progress_fill": {
+    "size_1x": [
+      40,
+      8
+    ],
+    "border_2x_LBRT": [
+      10,
+      6,
+      10,
+      6
+    ],
+    "imageType": "Sliced",
+    "use": "Step progress fill (Image Type: Filled, Horizontal also works)"
+  },
+  "window_dot": {
+    "size_1x": [
+      16,
+      16
+    ],
+    "border_2x_LBRT": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "imageType": "Simple",
+    "use": "Browser window dot"
+  },
+  "typing_dot": {
+    "size_1x": [
+      10,
+      10
+    ],
+    "border_2x_LBRT": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "imageType": "Simple",
+    "use": "Typing indicator dot"
+  },
+  "pixel": {
+    "size_1x": [
+      4,
+      4
+    ],
+    "border_2x_LBRT": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "imageType": "Sliced",
+    "use": "White 4px; tint for rules/lines"
+  },
+  "card_fill": {
+    "size_1x": [
+      96,
+      96
+    ],
+    "border_2x_LBRT": [
+      48,
+      48,
+      48,
+      48
+    ],
+    "imageType": "Sliced",
+    "use": "White rounded fill; use as a Mask shape or tint for card backgrounds"
+  },
+  "card_outline": {
+    "size_1x": [
+      96,
+      96
+    ],
+    "border_2x_LBRT": [
+      48,
+      48,
+      48,
+      48
+    ],
+    "imageType": "Sliced",
+    "use": "Outline only; drawn on top of masked art"
+  },
+  "card_outline_selected": {
+    "size_1x": [
+      96,
+      96
+    ],
+    "border_2x_LBRT": [
+      48,
+      48,
+      48,
+      48
+    ],
+    "imageType": "Sliced",
+    "use": "Selected lesson outline"
+  }
+}

@@ -1,0 +1,648 @@
+fileFormatVersion: 2
+guid: 798c2169808484625b88175c11e3aae0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1976056350984381705
+    second: Cast On_WIP4_Sprite Sheet_0
+  - first:
+      213: -7372451334519678660
+    second: Cast On_WIP4_Sprite Sheet_1
+  - first:
+      213: -8928751078345995532
+    second: Cast On_WIP4_Sprite Sheet_2
+  - first:
+      213: -4121209821816646470
+    second: Cast On_WIP4_Sprite Sheet_3
+  - first:
+      213: 2064942553767579443
+    second: Cast On_WIP4_Sprite Sheet_4
+  - first:
+      213: -4591059517390645324
+    second: Cast On_WIP4_Sprite Sheet_5
+  - first:
+      213: -4369109578360519297
+    second: Cast On_WIP4_Sprite Sheet_6
+  - first:
+      213: -6227183139301112247
+    second: Cast On_WIP4_Sprite Sheet_7
+  - first:
+      213: -6188439809523240103
+    second: Cast On_WIP4_Sprite Sheet_8
+  - first:
+      213: 8941949594077148753
+    second: Cast On_WIP4_Sprite Sheet_9
+  - first:
+      213: 5209926614553214298
+    second: Cast On_WIP4_Sprite Sheet_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cast On_WIP4_Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4324
+        width: 1916
+        height: 1076
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 905249818cc5c6b10800000000000000
+      internalID: 1976056350984381705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast On_WIP4_Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1921
+        y: 4324
+        width: 1916
+        height: 1076
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c39991a729acfa990800000000000000
+      internalID: -7372451334519678660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast On_WIP4_Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 3842
+        y: 4324
+        width: 1916
+        height: 1076
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fa0d476334b61480800000000000000
+      internalID: -8928751078345995532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast On_WIP4_Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 5763
+        y: 4324
+        width: 1916
+        height: 1076
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab494cd80858ec6c0800000000000000
+      internalID: -4121209821816646470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast On_WIP4_Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 7684
+        y: 4324
+        width: 1916
+        height: 1076
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33f87e6ef4628ac10800000000000000
+      internalID: 2064942553767579443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast On_WIP4_Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3243
+        width: 1916
+        height: 1076
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b7114381b74940c0800000000000000
+      internalID: -4591059517390645324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast On_WIP4_Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1921
+        y: 3243
+        width: 1916
+        height: 1076
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f75801dacfdcd53c0800000000000000
+      internalID: -4369109578360519297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast On_WIP4_Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 3842
+        y: 3243
+        width: 1916
+        height: 1076
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 946c7a68de99499a0800000000000000
+      internalID: -6227183139301112247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast On_WIP4_Sprite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 5763
+        y: 3243
+        width: 1916
+        height: 1076
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9533b7fe7ce3e1aa0800000000000000
+      internalID: -6188439809523240103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast On_WIP4_Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 7684
+        y: 3243
+        width: 1916
+        height: 1076
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 156ba6287cf281c70800000000000000
+      internalID: 8941949594077148753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast On_WIP4_Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2162
+        width: 1916
+        height: 1076
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5d3c4e07a06d4840800000000000000
+      internalID: 5209926614553214298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast On_WIP4_Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1921
+        y: 2162
+        width: 1916
+        height: 1076
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dddbc637c6c4f4f5c9ffd90773a0fb8b
+      internalID: -1151608354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast On_WIP4_Sprite Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 3842
+        y: 2162
+        width: 1916
+        height: 1076
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eea90df7a8774fbd89540dd73e404d3
+      internalID: 2138599827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast On_WIP4_Sprite Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 5763
+        y: 2162
+        width: 1916
+        height: 1076
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b644a2cd96495410ca41c75abd63a715
+      internalID: -1696717535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast On_WIP4_Sprite Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 7684
+        y: 2162
+        width: 1916
+        height: 1076
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a72417632a345fdb54294802bb0095
+      internalID: -528393587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast On_WIP4_Sprite Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1081
+        width: 1916
+        height: 1076
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dc12babb61254c87a3940fa70c91b8a
+      internalID: -1718707192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast On_WIP4_Sprite Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1921
+        y: 1081
+        width: 1916
+        height: 1076
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b2ffa04612824742abfbe958ba53997
+      internalID: 1133968304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast On_WIP4_Sprite Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 3842
+        y: 1081
+        width: 1916
+        height: 1076
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3c6adf9c73644b4da9016d9aa94f1a4
+      internalID: 2086888729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast On_WIP4_Sprite Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 5763
+        y: 1081
+        width: 1916
+        height: 1076
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0477c3f6497c043958e505bec3cf6dfe
+      internalID: 1758033905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast On_WIP4_Sprite Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 7684
+        y: 1081
+        width: 1916
+        height: 1076
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd53d08309c514e3d80cd5d3edd830e0
+      internalID: -869963588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast On_WIP4_Sprite Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1916
+        height: 1076
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b53fa28c1a6f4237bb0862ff9df2a1e
+      internalID: 697105529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 06002ed3cfc744325bbdeba946be4b29
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":5.0},"gridSpriteSize":{"x":1916.0,"y":1076.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":5.0,"y":5.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Cast On_WIP4_Sprite Sheet_0: 1976056350984381705
+      Cast On_WIP4_Sprite Sheet_1: -7372451334519678660
+      Cast On_WIP4_Sprite Sheet_10: 5209926614553214298
+      Cast On_WIP4_Sprite Sheet_11: -1151608354
+      Cast On_WIP4_Sprite Sheet_12: 2138599827
+      Cast On_WIP4_Sprite Sheet_13: -1696717535
+      Cast On_WIP4_Sprite Sheet_14: -528393587
+      Cast On_WIP4_Sprite Sheet_15: -1718707192
+      Cast On_WIP4_Sprite Sheet_16: 1133968304
+      Cast On_WIP4_Sprite Sheet_17: 2086888729
+      Cast On_WIP4_Sprite Sheet_18: 1758033905
+      Cast On_WIP4_Sprite Sheet_19: -869963588
+      Cast On_WIP4_Sprite Sheet_2: -8928751078345995532
+      Cast On_WIP4_Sprite Sheet_20: 697105529
+      Cast On_WIP4_Sprite Sheet_3: -4121209821816646470
+      Cast On_WIP4_Sprite Sheet_4: 2064942553767579443
+      Cast On_WIP4_Sprite Sheet_5: -4591059517390645324
+      Cast On_WIP4_Sprite Sheet_6: -4369109578360519297
+      Cast On_WIP4_Sprite Sheet_7: -6227183139301112247
+      Cast On_WIP4_Sprite Sheet_8: -6188439809523240103
+      Cast On_WIP4_Sprite Sheet_9: 8941949594077148753
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
