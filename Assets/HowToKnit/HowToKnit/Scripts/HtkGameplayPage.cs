@@ -4,6 +4,7 @@ using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using KnitSprite.Records;
+using KnitSprite.Knitting;
 
 namespace KnitSprite.UI.HowToKnit
 {
@@ -11,7 +12,7 @@ namespace KnitSprite.UI.HowToKnit
     /// Screen 3 - the cast-on lesson in the "How to Knit" web-page style.
     ///
     /// Same approach as WebPageGameplayUI: the existing animated sprite is filmed by its own
-    /// camera into a RenderTexture and shown inside the page, so ProgressManager, the Animator
+    /// camera into a RenderTexture and shown inside the page, so ProgressManager
     /// and ProgresstoAnimation keep working untouched. Use this INSTEAD of WebPageGameplayUI
     /// (disable that one), not alongside it.
     ///
@@ -58,7 +59,8 @@ namespace KnitSprite.UI.HowToKnit
         };
 
         [Header("Navigation")]
-        public string lessonSelectScene = "";
+        [Tooltip("Scenes for the tabs and the About dialog.")]
+        public HtkScenes scenes = new HtkScenes();
         public string nextLessonScene = "";
         public UnityEvent onLessonComplete;
 
@@ -77,8 +79,13 @@ namespace KnitSprite.UI.HowToKnit
         Image progressFill;
         readonly List<RowView> rows = new List<RowView>();
         readonly List<Image> ticks = new List<Image>();
-        GameObject dialog;
+        GameObject dialog, aboutDialog;
         int baseline, lastCount = -1;
+
+        // Pattern mode: set when creative mode hands over a chart (KnitSession). Null = story lesson.
+        KnitPattern pattern;
+        HtkPatternPanel patternPanel;
+        Text dialogBody;
         ProgressManager.StitchStep lastStep = (ProgressManager.StitchStep)(-1);
 
         class RowView { public Image highlight, box; public Text number, name; public Image check; }
@@ -116,10 +123,20 @@ namespace KnitSprite.UI.HowToKnit
             if (progressManager == null)
                 Debug.LogWarning("HtkGameplayPage: no ProgressManager in the scene - the page will sit idle.", this);
 
+            pattern = KnitSession.Consume();
+            if (pattern != null)
+            {
+                stitchesToComplete = pattern.Count;
+                lessonTitle = "your pattern";
+                urlPath = "/create/knit";
+                showMessages = false;
+            }
+
             HtkUI.EnsureEventSystem();
             BuildCaptureCamera();
             BuildPage();
             baseline = progressManager != null ? progressManager.CompletedStitches : 0;
+            if (pattern != null) ShowNextStitch("");
         }
 
         void OnEnable()
@@ -134,6 +151,7 @@ namespace KnitSprite.UI.HowToKnit
 
         void OnDestroy()
         {
+            patternPanel?.Destroy();
             if (captureCamera != null) captureCamera.targetTexture = null;
             if (renderTexture != null) { renderTexture.Release(); Destroy(renderTexture); }
         }
@@ -177,15 +195,15 @@ namespace KnitSprite.UI.HowToKnit
         void BuildPage()
         {
             var screen = HtkUI.Canvas(transform, "GameplayCanvas", sortingOrder);
-            HtkBrowserChrome.Build(screen, urlPath, HtkBrowserChrome.Tab.Tutorials,
-                tab => { if (tab == HtkBrowserChrome.Tab.Tutorials) LoadScene(lessonSelectScene); },
-                onBack: () => LoadScene(lessonSelectScene));
+            HtkBrowserChrome.Build(screen, urlPath,
+                                   pattern != null ? HtkBrowserChrome.Tab.Create : HtkBrowserChrome.Tab.Tutorials, scenes,
+                                   () => { if (aboutDialog != null) aboutDialog.SetActive(true); });
 
             const float left = 60f;
             float top = HtkBrowserChrome.ContentTop + 24f;  // 188
 
             // ---- heading ----
-            HtkUI.Label(screen, $"Tutorials / Lesson {lessonNumber}", HtkTheme.Mono, 18, HtkTheme.Muted, left, top, 600f, 24f);
+            HtkUI.Label(screen, pattern != null ? "Create / Knit your chart" : $"Tutorials / Lesson {lessonNumber}", HtkTheme.Mono, 18, HtkTheme.Muted, left, top, 600f, 24f);
             HtkUI.Label(screen, lessonTitle, HtkTheme.PixelBold, 46, HtkTheme.Ink, left, top + 30f, 1000f, 52f);
 
             // ---- animation card (1280x720) ----
@@ -230,15 +248,22 @@ namespace KnitSprite.UI.HowToKnit
                 rows.Add(v);
             }
 
+            // pattern mode: a live mini chart instead of the 25-tick counter
+            if (pattern != null)
+                patternPanel = new HtkPatternPanel(screen, pattern, colX, cardY + 496f, colW, cardH - 496f);
+            else
+            {
             // 25-stitch counter
             float tickW = (colW - 3f * (stitchesToComplete - 1)) / stitchesToComplete;
             for (int i = 0; i < stitchesToComplete; i++)
                 ticks.Add(HtkUI.Img(screen, "Tick", HtkTheme.UI("tick_empty"), colX + i * (tickW + 3f), cardY + 496f, tickW, 22f));
+            }
 
             // ---- messages (over the right column) ----
             feed = new HtkMessageFeed(screen, messages, 1920f - 59f - 30f, 259f + 790f - 50f);
 
             BuildDialog(screen);
+            aboutDialog = HtkAboutDialog.Build(screen, scenes);   // built last so it draws on top
         }
 
         void BuildDialog(RectTransform screen)
@@ -250,6 +275,8 @@ namespace KnitSprite.UI.HowToKnit
             float x = (1920f - w) / 2f, y = (1080f - h) / 2f;
             HtkUI.Shadow(root, x, y, w, h, 0.2f, 30f, 64f);
             var card = HtkUI.Img(root, "Dialog", HtkTheme.UI("card"), x, y, w, h).rectTransform;
+
+            if (pattern != null) { BuildPatternDialog(root, card, w); return; }
 
             var chip = HtkUI.Img(card, "Chip", HtkTheme.UI("pill"), 48f, 48f, 250f, 34f);
             HtkUI.Label(chip.transform, $"Lesson {lessonNumber} complete", HtkTheme.Pixel, 18, HtkTheme.Ink, 0, 0, 250f, 34f, TextAnchor.MiddleCenter);
@@ -268,6 +295,39 @@ namespace KnitSprite.UI.HowToKnit
             dialog.SetActive(false);
         }
 
+        void BuildPatternDialog(RectTransform root, RectTransform card, float w)
+        {
+            var chip = HtkUI.Img(card, "Chip", HtkTheme.UI("pill"), 48f, 48f, 250f, 34f);
+            HtkUI.Label(chip.transform, "Pattern complete", HtkTheme.Pixel, 18, HtkTheme.Ink, 0, 0, 250f, 34f, TextAnchor.MiddleCenter);
+
+            HtkUI.Label(card, "All ", HtkTheme.PixelBold, 56, HtkTheme.Ink, 48f, 100f, 300f, 60f);
+            float allW = HtkBrowserChrome.TextWidth("All ", HtkTheme.PixelBold, 56);
+            HtkUI.Label(card, "done!", HtkTheme.PixelBold, 56, accent, 48f + allW, 100f, 300f, 60f);
+
+            dialogBody = HtkUI.Label(card, "", HtkTheme.Mono, 21, HtkTheme.Ink, 48f, 176f, w - 96f, 64f,
+                                     TextAnchor.UpperLeft, wrap: true, lineSpacing: 1.2f);
+
+            DialogButton(card, "Back to chart", true, 48f, 250f, 260f, () => HtkScenes.Load(scenes.creative));
+            DialogButton(card, "Knit again", false, 48f + 274f, 250f, 240f, Restart);
+
+            dialog = root.gameObject;
+            dialog.SetActive(false);
+        }
+
+        /// Status line in pattern mode: what was just made, then what's next and in which yarn.
+        void ShowNextStitch(string justMade)
+        {
+            int n = progressManager != null ? progressManager.CompletedStitches - baseline : 0;
+            string next = "";
+            if (n < pattern.Count)
+            {
+                var s = pattern[n];
+                next = $"Next: {pattern.Describe(n)} · {pattern.YarnName(s.yarnIndex)} yarn";
+                if (s.type != StitchType.CastOn) next += " (cast-on motion for now)";
+            }
+            statusText.text = string.IsNullOrEmpty(justMade) ? next : $"{justMade}   {next}";
+        }
+
         void DialogButton(RectTransform parent, string label, bool primary, float x, float y, float w, System.Action onClick)
         {
             var b = HtkUI.Img(parent, label, HtkTheme.UI(primary ? "button_dark" : "button_light"), x, y, w, 68f);
@@ -282,6 +342,7 @@ namespace KnitSprite.UI.HowToKnit
             float dt = Time.unscaledDeltaTime;
             prompt.Tick(dt);
             feed.Tick(dt);
+            patternPanel?.Tick(dt);
             if (progressManager == null) return;
 
             int count = progressManager.CompletedStitches - baseline;
@@ -290,6 +351,13 @@ namespace KnitSprite.UI.HowToKnit
 
             if (count >= stitchesToComplete && !dialog.activeSelf)
             {
+                if (pattern != null && dialogBody != null)
+                {
+                    int loose = 0;
+                    foreach (int r in pattern.results) if (r == (int)ProgressManager.StitchQuality.Miss) loose++;
+                    dialogBody.text = $"{pattern.Count} stitches - cast on plus {pattern.chartRows} rows of your chart. " +
+                                      (loose == 0 ? "Every stitch came out even." : $"{loose} came out a little loose.");
+                }
                 dialog.SetActive(true);
                 progressManager.enabled = false;   // stop input while the dialog is up
                 feed.Clear();
@@ -352,6 +420,7 @@ namespace KnitSprite.UI.HowToKnit
 
         void RefreshTicks(int count)
         {
+            if (patternPanel != null) { patternPanel.SetProgress(count); return; }
             for (int i = 0; i < ticks.Count; i++)
             {
                 bool on = i < count;
@@ -363,6 +432,14 @@ namespace KnitSprite.UI.HowToKnit
         void HandleStitchComplete(ProgressManager.StitchQuality quality)
         {
             int n = progressManager.CompletedStitches - baseline;
+            if (pattern != null)
+            {
+                if (n >= 1 && n <= pattern.Count) pattern.results[n - 1] = (int)quality;
+                bool missed = quality == ProgressManager.StitchQuality.Miss;
+                ShowNextStitch(missed ? "Loose stitch." : $"{quality}!");
+                statusText.color = missed ? HtkTheme.Error : HtkTheme.Ink;
+                return;
+            }
             statusText.text = quality == ProgressManager.StitchQuality.Miss
                 ? $"Stitch {n} of {stitchesToComplete} · a little loose - try the timing again"
                 : $"Stitch {n} of {stitchesToComplete} · {quality}!";
@@ -376,7 +453,10 @@ namespace KnitSprite.UI.HowToKnit
             dialog.SetActive(false);
             statusText.text = "";
             feed.Clear();
+            if (pattern != null) { pattern.ResetResults(); ShowNextStitch(""); statusText.color = HtkTheme.Ink; }
             if (progressManager != null) progressManager.enabled = true;
+            var art = animationTarget != null ? animationTarget.GetComponent<ProgresstoAnimation>() : null;
+            if (art != null) art.ResetStitchArt(); // back to the empty needle
         }
 
         // tick_filled / progress_fill are drawn in yarn blue; tint relative to it for a custom accent

@@ -1,0 +1,678 @@
+fileFormatVersion: 2
+guid: 49a8c1bfa1986440494b578b3bfab49b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8154000048857089117
+    second: cast on final knot 23_0
+  - first:
+      213: -7833946469152262345
+    second: cast on final knot 23_1
+  - first:
+      213: -8760307432708468944
+    second: cast on final knot 23_2
+  - first:
+      213: 3182962254702173713
+    second: cast on final knot 23_3
+  - first:
+      213: 2539532209727656016
+    second: cast on final knot 23_4
+  - first:
+      213: -1746737906816989040
+    second: cast on final knot 23_5
+  - first:
+      213: -8927277663620323399
+    second: cast on final knot 23_6
+  - first:
+      213: 8920309250339022402
+    second: cast on final knot 23_7
+  - first:
+      213: 4523657748646492109
+    second: cast on final knot 23_8
+  - first:
+      213: 7117939520242048985
+    second: cast on final knot 23_9
+  - first:
+      213: 5821232028812080834
+    second: cast on final knot 23_10
+  - first:
+      213: -963178490599077292
+    second: cast on final knot 23_11
+  - first:
+      213: 5499309751596023478
+    second: cast on final knot 23_12
+  - first:
+      213: -4016938659585312848
+    second: cast on final knot 23_13
+  - first:
+      213: -7040091155596676541
+    second: cast on final knot 23_14
+  - first:
+      213: -8049850508064555274
+    second: cast on final knot 23_15
+  - first:
+      213: -4169295497793045636
+    second: cast on final knot 23_16
+  - first:
+      213: 8737631595161058762
+    second: cast on final knot 23_17
+  - first:
+      213: 4016728318270743457
+    second: cast on final knot 23_18
+  - first:
+      213: 2149480129603316776
+    second: cast on final knot 23_19
+  - first:
+      213: -6962257465091581211
+    second: cast on final knot 23_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cast on final knot 23_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4321
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3abfa55482c27de80800000000000000
+      internalID: -8154000048857089117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cast on final knot 23_1
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 4321
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 737f0cc313b384390800000000000000
+      internalID: -7833946469152262345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cast on final knot 23_2
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 4321
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03f8236ddc22d6680800000000000000
+      internalID: -8760307432708468944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cast on final knot 23_3
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 4321
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11edffc7e472c2c20800000000000000
+      internalID: 3182962254702173713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cast on final knot 23_4
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 4321
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 050da78f61b3e3320800000000000000
+      internalID: 2539532209727656016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cast on final knot 23_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3241
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 098c67cd02752c7e0800000000000000
+      internalID: -1746737906816989040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cast on final knot 23_6
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3241
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b7a1a08340fb1480800000000000000
+      internalID: -8927277663620323399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cast on final knot 23_7
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 3241
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 246a619500e4bcb70800000000000000
+      internalID: 8920309250339022402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cast on final knot 23_8
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 3241
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc7748941c247ce30800000000000000
+      internalID: 4523657748646492109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cast on final knot 23_9
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 3241
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dfddbcf74008c260800000000000000
+      internalID: 7117939520242048985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cast on final knot 23_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2161
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c6787020bb29c050800000000000000
+      internalID: 5821232028812080834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cast on final knot 23_11
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2161
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45a8b84144a12a2f0800000000000000
+      internalID: -963178490599077292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cast on final knot 23_12
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 2161
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bef8bd1519715c40800000000000000
+      internalID: 5499309751596023478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cast on final knot 23_13
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 2161
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b732ee5297f048c0800000000000000
+      internalID: -4016938659585312848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cast on final knot 23_14
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 2161
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3427a4cd4629c4e90800000000000000
+      internalID: -7040091155596676541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cast on final knot 23_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1081
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fe70d3ec9f294090800000000000000
+      internalID: -8049850508064555274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cast on final knot 23_16
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1081
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7bf86aa5dfa326c0800000000000000
+      internalID: -4169295497793045636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cast on final knot 23_17
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1081
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acdfdcf44ad424970800000000000000
+      internalID: 8737631595161058762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cast on final knot 23_18
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 1081
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a3a7c9bf194eb730800000000000000
+      internalID: 4016728318270743457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cast on final knot 23_19
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 1081
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82c24c81acc74dd10800000000000000
+      internalID: 2149480129603316776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cast on final knot 23_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ea976e19b7116f90800000000000000
+      internalID: -6962257465091581211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 23be4c1d3f1bc4297873388e4954ace5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":5.0},"gridSpriteSize":{"x":1919.0,"y":1079.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":1.0,"y":1.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      cast on final knot 23_0: -8154000048857089117
+      cast on final knot 23_1: -7833946469152262345
+      cast on final knot 23_10: 5821232028812080834
+      cast on final knot 23_11: -963178490599077292
+      cast on final knot 23_12: 5499309751596023478
+      cast on final knot 23_13: -4016938659585312848
+      cast on final knot 23_14: -7040091155596676541
+      cast on final knot 23_15: -8049850508064555274
+      cast on final knot 23_16: -4169295497793045636
+      cast on final knot 23_17: 8737631595161058762
+      cast on final knot 23_18: 4016728318270743457
+      cast on final knot 23_19: 2149480129603316776
+      cast on final knot 23_2: -8760307432708468944
+      cast on final knot 23_20: -6962257465091581211
+      cast on final knot 23_3: 3182962254702173713
+      cast on final knot 23_4: 2539532209727656016
+      cast on final knot 23_5: -1746737906816989040
+      cast on final knot 23_6: -8927277663620323399
+      cast on final knot 23_7: 8920309250339022402
+      cast on final knot 23_8: 4523657748646492109
+      cast on final knot 23_9: 7117939520242048985
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

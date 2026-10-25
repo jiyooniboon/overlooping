@@ -1,0 +1,574 @@
+fileFormatVersion: 2
+guid: cba7715ce6d84450680e09b6aacbf037
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8045539082111762595
+    second: knit stitche knot 10_0
+  - first:
+      213: -3853799672396853349
+    second: knit stitche knot 10_1
+  - first:
+      213: 7394753804381458817
+    second: knit stitche knot 10_2
+  - first:
+      213: 7811448625595467690
+    second: knit stitche knot 10_3
+  - first:
+      213: 8113472286375719397
+    second: knit stitche knot 10_4
+  - first:
+      213: -2523437401132387097
+    second: knit stitche knot 10_5
+  - first:
+      213: 8937866004766801188
+    second: knit stitche knot 10_6
+  - first:
+      213: -506635298414491378
+    second: knit stitche knot 10_7
+  - first:
+      213: 7806185865793424225
+    second: knit stitche knot 10_8
+  - first:
+      213: 1358040971258390460
+    second: knit stitche knot 10_9
+  - first:
+      213: 7437369813355014470
+    second: knit stitche knot 10_10
+  - first:
+      213: 3476340420650412550
+    second: knit stitche knot 10_11
+  - first:
+      213: 6912728859218900447
+    second: knit stitche knot 10_12
+  - first:
+      213: 7005208780829306290
+    second: knit stitche knot 10_13
+  - first:
+      213: -4551776858898795455
+    second: knit stitche knot 10_14
+  - first:
+      213: 4247069052961911193
+    second: knit stitche knot 10_15
+  - first:
+      213: 2863753382991462999
+    second: knit stitche knot 10_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: knit stitche knot 10_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3241
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5fb438f4d0885090800000000000000
+      internalID: -8045539082111762595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knit stitche knot 10_1
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3241
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9fc443cd9d848ac0800000000000000
+      internalID: -3853799672396853349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knit stitche knot 10_2
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 3241
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18110afe7617f9660800000000000000
+      internalID: 7394753804381458817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knit stitche knot 10_3
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 3241
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa7c4dd5327d76c60800000000000000
+      internalID: 7811448625595467690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knit stitche knot 10_4
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 3241
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e1b664be08d89070800000000000000
+      internalID: 8113472286375719397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knit stitche knot 10_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2161
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e4b19cad03fafcd0800000000000000
+      internalID: -2523437401132387097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knit stitche knot 10_6
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2161
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42d3a28c6cda90c70800000000000000
+      internalID: 8937866004766801188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knit stitche knot 10_7
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 2161
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e09845f51e118f8f0800000000000000
+      internalID: -506635298414491378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knit stitche knot 10_8
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 2161
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16bca4d9fa4255c60800000000000000
+      internalID: 7806185865793424225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knit stitche knot 10_9
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 2161
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb76842711bb8d210800000000000000
+      internalID: 1358040971258390460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knit stitche knot 10_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1081
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6492d3cb078d63760800000000000000
+      internalID: 7437369813355014470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knit stitche knot 10_11
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1081
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60a2333b1317e3030800000000000000
+      internalID: 3476340420650412550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knit stitche knot 10_12
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1081
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd57552b542feef50800000000000000
+      internalID: 6912728859218900447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knit stitche knot 10_13
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 1081
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bd27ce5540873160800000000000000
+      internalID: 7005208780829306290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knit stitche knot 10_14
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 1081
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1447e7c2017d4d0c0800000000000000
+      internalID: -4551776858898795455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knit stitche knot 10_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 991795e3dce90fa30800000000000000
+      internalID: 4247069052961911193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knit stitche knot 10_16
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1
+        width: 1919
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 752878d67881eb720800000000000000
+      internalID: 2863753382991462999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 09f319dc6cbdf42518d135bdb252e6e2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":4.0},"gridSpriteSize":{"x":1919.0,"y":1079.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":1.0,"y":1.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      knit stitche knot 10_0: -8045539082111762595
+      knit stitche knot 10_1: -3853799672396853349
+      knit stitche knot 10_10: 7437369813355014470
+      knit stitche knot 10_11: 3476340420650412550
+      knit stitche knot 10_12: 6912728859218900447
+      knit stitche knot 10_13: 7005208780829306290
+      knit stitche knot 10_14: -4551776858898795455
+      knit stitche knot 10_15: 4247069052961911193
+      knit stitche knot 10_16: 2863753382991462999
+      knit stitche knot 10_2: 7394753804381458817
+      knit stitche knot 10_3: 7811448625595467690
+      knit stitche knot 10_4: 8113472286375719397
+      knit stitche knot 10_5: -2523437401132387097
+      knit stitche knot 10_6: 8937866004766801188
+      knit stitche knot 10_7: -506635298414491378
+      knit stitche knot 10_8: 7806185865793424225
+      knit stitche knot 10_9: 1358040971258390460
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

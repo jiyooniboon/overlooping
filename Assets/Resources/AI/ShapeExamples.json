@@ -1,0 +1,50 @@
+{
+  "note": "Worked examples for the shape prompt, on a 32x32 grid (scaled to the grid size at runtime). Colors are target colors: each is swapped for the closest yarn in the palette, keeping different colors on different yarns where the palette allows. Used by ShapeSource in the game and by AITools/shape_test.py.",
+  "examples": [
+    {
+      "keyword": "cat face",
+      "design": {
+        "parts": "grey head in the middle, two pointed grey ears on top, pink inside the ears, two dark eyes, small pink nose",
+        "symmetry": "mirror",
+        "shapes": [
+          {"kind": "triangle", "color": "#6e6e6e", "x": 5, "y": 3, "x2": 14, "y2": 9, "x3": 4, "y3": 15},
+          {"kind": "ellipse", "color": "#6e6e6e", "x": 16, "y": 17, "w": 11, "h": 10},
+          {"kind": "triangle", "color": "#e88aa0", "x": 7, "y": 6, "x2": 12, "y2": 10, "x3": 6, "y3": 12},
+          {"kind": "circle", "color": "#303030", "x": 11, "y": 15, "w": 2},
+          {"kind": "triangle", "color": "#e88aa0", "x": 13, "y": 20, "x2": 18, "y2": 20, "x3": 15, "y3": 23}
+        ]
+      }
+    },
+    {
+      "keyword": "pine tree",
+      "design": {
+        "parts": "brown trunk at the bottom, three stacked green triangles getting wider downward, yellow star on top, red baubles",
+        "symmetry": "mirror",
+        "shapes": [
+          {"kind": "rect", "color": "#7a5030", "x": 14, "y": 25, "w": 4, "h": 5},
+          {"kind": "triangle", "color": "#3c8c46", "x": 16, "y": 3, "x2": 7, "y2": 13, "x3": 25, "y3": 13},
+          {"kind": "triangle", "color": "#3c8c46", "x": 16, "y": 8, "x2": 5, "y2": 19, "x3": 27, "y3": 19},
+          {"kind": "triangle", "color": "#3c8c46", "x": 16, "y": 13, "x2": 3, "y2": 25, "x3": 29, "y3": 25},
+          {"kind": "circle", "color": "#e8c040", "x": 16, "y": 3, "w": 2},
+          {"kind": "circle", "color": "#c83c3c", "x": 11, "y": 17, "w": 1},
+          {"kind": "circle", "color": "#c83c3c", "x": 9, "y": 22, "w": 1}
+        ]
+      }
+    },
+    {
+      "keyword": "sailboat",
+      "design": {
+        "parts": "brown hull at the bottom, mast in the middle, big red sail right of the mast, smaller yellow sail left of it, blue water under the boat",
+        "symmetry": "none",
+        "shapes": [
+          {"kind": "triangle", "color": "#7a5030", "x": 4, "y": 21, "x2": 28, "y2": 21, "x3": 23, "y3": 26},
+          {"kind": "triangle", "color": "#7a5030", "x": 4, "y": 21, "x2": 9, "y2": 26, "x3": 23, "y3": 26},
+          {"kind": "line", "color": "#7a5030", "x": 16, "y": 4, "x2": 16, "y2": 21, "w": 1},
+          {"kind": "triangle", "color": "#c83c3c", "x": 17, "y": 5, "x2": 17, "y2": 19, "x3": 27, "y3": 19},
+          {"kind": "triangle", "color": "#e8c040", "x": 15, "y": 8, "x2": 15, "y2": 19, "x3": 7, "y3": 19},
+          {"kind": "rect", "color": "#3c64b4", "x": 2, "y": 27, "w": 28, "h": 3}
+        ]
+      }
+    }
+  ]
+}

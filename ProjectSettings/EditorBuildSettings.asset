@@ -14,6 +14,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/altSequenceScene.unity
     guid: 0084d1bf9f5da4d508df440d9e3f52f1
+  - enabled: 1
+    path: Assets/Scenes/creativeModeScene.unity
+    guid: dae7982ba2eb74815ab8f891a220b1a3
+  - enabled: 1
+    path: Assets/Scenes/PracticeModeScene.unity
+    guid: e18b567a686294747bd3ccf5a510799a
   - enabled: 0
     path: Assets/Scenes/ImageSequenceScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02

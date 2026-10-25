@@ -47,7 +47,8 @@ namespace KnitSprite.UI.HowToKnit
 
         public int selected = 1;
         public UnityEvent<int> onStartLesson;
-        public string titleScene = "";
+        [Tooltip("Scenes for the tabs and the About dialog.")]
+        public HtkScenes scenes = new HtkScenes();
         public Color accent = HtkTheme.Yarn;
         public int sortingOrder = 100;
 
@@ -68,11 +69,9 @@ namespace KnitSprite.UI.HowToKnit
         {
             HtkUI.EnsureEventSystem();
             var screen = HtkUI.Canvas(transform, "LessonSelectCanvas", sortingOrder);
-            HtkBrowserChrome.Build(screen, "/tutorials", HtkBrowserChrome.Tab.Tutorials, tab =>
-            {
-                if (tab == HtkBrowserChrome.Tab.About && !string.IsNullOrEmpty(titleScene))
-                    SceneManager.LoadScene(titleScene);
-            }, onBack: () => { if (!string.IsNullOrEmpty(titleScene)) SceneManager.LoadScene(titleScene); });
+            GameObject about = null;
+            HtkBrowserChrome.Build(screen, "/tutorials", HtkBrowserChrome.Tab.Tutorials, scenes,
+                                   () => { if (about != null) about.SetActive(true); });
 
             const float left = 60f, width = 1800f;
             float top = HtkBrowserChrome.ContentTop + 40f; // 204
@@ -121,6 +120,8 @@ namespace KnitSprite.UI.HowToKnit
             lockedNote = locked.gameObject;
 
             Select(Mathf.Clamp(selected, 0, lessons.Count - 1));
+
+            about = HtkAboutDialog.Build(screen, scenes);   // built last so it draws on top
         }
 
         CardView BuildCard(RectTransform parent, int index, float x, float y, float w, float h, float thumbH)

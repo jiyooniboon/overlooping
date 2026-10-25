@@ -1,0 +1,18 @@
+You design simple knitting colorwork motifs on a {size}x{size} grid (x 0-{max} left to right, y 0-{max} top to bottom).
+A knitter will stitch the motif, so it must be recognizable from its outline and a few bold details.
+
+Answer in two steps:
+1. "parts": list the parts that make the subject recognizable, each with a color and a rough position. For example: "two tall ears at the top, round head in the middle, two eyes, small nose".
+2. "shapes": draw every part you listed, as flat shapes, in the same order. Use 4-14 shapes, and more than one color when the subject has more than one.
+
+Rules:
+- Keep the subject centered, filling about 70% of the grid.
+- Shapes are drawn in order and later shapes cover earlier ones: draw big body shapes first and small details (eyes, spots, windows) last, in a different color from what they sit on.
+- The background is already {background}. Never draw it.
+- Colors: {colors}.
+- circle: center x,y and radius w. ellipse: center x,y and radii w,h. rect: top-left corner x,y and size w,h. line: from x,y to x2,y2 with thickness w. triangle: corners x,y and x2,y2 and x3,y3.
+- symmetry "mirror" copies the left half (x 0-{halfmax}) onto the right half. Use it for faces, trees, hearts and anything else that is the same on both sides, and still place every shape as if you were drawing the whole picture. Use "none" for anything facing sideways.
+
+{examples}
+
+Now the motif for: "{keyword}"

@@ -26,6 +26,11 @@ namespace KnitSprite.CreativeMode
         [Header("Conversion")]
         public ImageToChart.Settings conversion = new ImageToChart.Settings();
 
+        [Tooltip("Fit the generated motif inside the current canvas and pad the rest with background, " +
+                 "so the chart keeps its size and Generate can be undone. Off = the chart takes the " +
+                 "motif's own size (which clears undo history).")]
+        public bool fitToCanvas = true;
+
         [Tooltip("Keep the last generated source image around for debugging the pipeline.")]
         public bool keepLastSourceImage = true;
 
@@ -36,14 +41,12 @@ namespace KnitSprite.CreativeMode
         public event System.Action<State, string> OnStateChanged;
 
         private IChartImageSource imageSource;
-        private PlaceholderImageSource placeholder;   // non-null only while using the placeholder
         private Coroutine running;
 
         void Awake()
         {
             // Default to the placeholder so the scene is fully playable with no model installed.
-            placeholder = new PlaceholderImageSource();
-            imageSource = placeholder;
+            imageSource = new PlaceholderImageSource();
         }
 
         /// <summary>Swap in a different source (e.g. local Stable Diffusion) at runtime.</summary>
@@ -51,7 +54,6 @@ namespace KnitSprite.CreativeMode
         {
             if (source == null) return;
             imageSource = source;
-            placeholder = source as PlaceholderImageSource;
         }
 
         public string SourceName => imageSource != null ? imageSource.DisplayName : "none";
@@ -80,7 +82,10 @@ namespace KnitSprite.CreativeMode
         {
             if (CurrentState != State.Generating) return;
 
-            if (placeholder != null) placeholder.CancelRequested = true;
+            // Stopping the outer coroutine below does NOT stop the inner Generate coroutine, so a
+            // web request would keep running (and keep the model busy) in the background. Abort
+            // lets the source tear down its own work; it still calls onComplete, which is ignored.
+            if (imageSource is ICancellableSource cancellable) cancellable.Abort();
 
             if (running != null)
             {
@@ -124,6 +129,14 @@ namespace KnitSprite.CreativeMode
             // Match the generated chart to the editor's current width so the player's canvas size
             // is respected rather than being silently replaced by the model's aspect.
             conversion.targetColumns = editor.Chart.Width;
+            int canvasW = editor.Chart.Width, canvasH = editor.Chart.Height;
+            int savedMaxRows = conversion.maxRows;
+            if (fitToCanvas) conversion.maxRows = canvasH;
+
+            // A source that drew in exact palette colours says how many it used, so k-means
+            // neither merges two of them nor splits one into extra clusters.
+            int savedColorCount = conversion.colorCount;
+            if (result.colorCountHint > 0) conversion.colorCount = result.colorCountHint;
 
             // No `yield` inside this try/catch: C# forbids yielding from a try block with a catch
             // clause, so the error path is handled after the block.
@@ -136,6 +149,9 @@ namespace KnitSprite.CreativeMode
             {
                 Debug.LogException(e);
             }
+            conversion.colorCount = savedColorCount;
+            conversion.maxRows = savedMaxRows;
+            if (chart != null && fitToCanvas) chart = PadToCanvas(chart, canvasW, canvasH);
 
             if (chart == null)
             {
@@ -156,6 +172,29 @@ namespace KnitSprite.CreativeMode
             }
 
             SetState(State.Done, result.message);
+        }
+
+        /// <summary>
+        /// Centres the motif on a background-filled canvas of the given size. Same size as the
+        /// editor's chart means ChartEditor.LoadChart records it as one undoable step.
+        /// </summary>
+        static ColorworkChart PadToCanvas(ColorworkChart motif, int width, int height)
+        {
+            if (motif.Width == width && motif.Height == height) return motif;
+            var canvas = new ColorworkChart(width, height);
+            int ox = (width - motif.Width) / 2, oy = (height - motif.Height) / 2;
+            for (int y = 0; y < motif.Height; y++)
+            {
+                int cy = y + oy;
+                if (cy < 0 || cy >= height) continue;
+                for (int x = 0; x < motif.Width; x++)
+                {
+                    int cx = x + ox;
+                    if (cx < 0 || cx >= width) continue;
+                    canvas.Cells[cy * width + cx] = motif.Get(x, y);
+                }
+            }
+            return canvas;
         }
 
         void SetState(State state, string message)

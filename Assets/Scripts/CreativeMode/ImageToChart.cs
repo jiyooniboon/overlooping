@@ -55,6 +55,10 @@ namespace KnitSprite.CreativeMode
 
             public bool despeckle = true;
 
+            [Tooltip("Most rows the chart may have (0 = no limit). A tall subject is narrowed to fit, " +
+                     "keeping its proportions, rather than running past the canvas.")]
+            public int maxRows = 0;
+
             [Tooltip("Give every cluster a different yarn. Without this, clusters that are close " +
                      "in color all snap to the same nearest yarn and the chart silently collapses " +
                      "to fewer colors than the player asked for.")]
@@ -98,6 +102,11 @@ namespace KnitSprite.CreativeMode
             int cols = Mathf.Max(2, s.targetColumns);
             float gauge = s.rowsPerInch / Mathf.Max(0.01f, s.stitchesPerInch);
             int rows = Mathf.Max(2, Mathf.RoundToInt(cols * ((float)cropH / cropW) * gauge));
+            if (s.maxRows > 0 && rows > s.maxRows)
+            {
+                cols = Mathf.Max(2, Mathf.RoundToInt(cols * (float)s.maxRows / rows));
+                rows = Mathf.Max(2, s.maxRows);
+            }
 
             var cellColor = new Color32[cols * rows];
             var cellIsForeground = new bool[cols * rows];

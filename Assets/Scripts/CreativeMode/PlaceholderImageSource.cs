@@ -17,7 +17,7 @@ namespace KnitSprite.CreativeMode
     /// It also fakes latency and honours cancellation, so the loading/cancel UI is real work
     /// rather than something to be wired up later against an unpredictable dependency.
     /// </summary>
-    public class PlaceholderImageSource : IChartImageSource
+    public class PlaceholderImageSource : IChartImageSource, ICancellableSource
     {
         public string DisplayName => "Placeholder (no model)";
 
@@ -26,6 +26,8 @@ namespace KnitSprite.CreativeMode
 
         /// <summary>Set by the controller to abort an in-flight generation.</summary>
         public bool CancelRequested { get; set; }
+
+        public void Abort() => CancelRequested = true;
 
         const int TextureSize = 256;
         const int MotifCells = 16;   // per quadrant, before mirroring -> 32x32 motif

@@ -26,12 +26,29 @@ namespace KnitSprite.CreativeMode
         IEnumerator Generate(string keyword, Action<ImageResult> onComplete);
     }
 
+    /// <summary>
+    /// A source whose in-flight work (a web request, a child process) can be stopped. Cancel
+    /// calls Abort(); the source must then still call onComplete once, and should report
+    /// ImageResult.Cancelled() so the controller returns to Idle rather than Error.
+    /// </summary>
+    public interface ICancellableSource
+    {
+        void Abort();
+    }
+
     public struct ImageResult
     {
         public bool success;
         public Texture2D texture;
         public string message;   // shown to the player: either a status note or an error
         public bool cancelled;
+
+        /// <summary>
+        /// Optional: how many non-background yarns ImageToChart should cluster into for this image.
+        /// 0 = use the controller's setting. Sources that already draw in exact palette colours
+        /// (ShapeSource) set it to the number of yarns they used, so no colour gets merged.
+        /// </summary>
+        public int colorCountHint;
 
         public static ImageResult Ok(Texture2D tex, string message) =>
             new ImageResult { success = true, texture = tex, message = message };
@@ -64,5 +81,18 @@ namespace KnitSprite.CreativeMode
             "text, watermark, signature, 3d render";
 
         public static string BuildPositive(string keyword) => string.Format(PositiveTemplate, keyword);
+
+        /// <summary>
+        /// Same prompt, plus the actual yarn names, so an image model paints in roughly the right
+        /// colours to begin with and less detail is lost when ImageToChart quantizes.
+        /// </summary>
+        public static string BuildPositive(string keyword, YarnPalette p)
+        {
+            if (p == null || p.Count == 0) return BuildPositive(keyword);
+            var names = new System.Collections.Generic.List<string>();
+            for (int i = 0; i < p.Count; i++) names.Add(p.GetName(i).ToLowerInvariant());
+            return BuildPositive(keyword) +
+                   $", using only these colors: {string.Join(", ", names)}, {names[0]} background";
+        }
     }
 }

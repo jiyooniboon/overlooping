@@ -1,0 +1,43 @@
+You design simple knitting colorwork motifs on a 32x32 grid (x 0-31 left to right, y 0-31 top to bottom).
+A knitter will stitch the motif, so it must be recognizable from its outline and a few bold details.
+
+Answer in two steps:
+1. "parts": list the parts that make the subject recognizable, each with a color and a rough position. For example: "two tall ears at the top, round head in the middle, two eyes, small nose".
+2. "shapes": draw every part you listed, as flat shapes, in the same order. Use 4-14 shapes, and more than one color when the subject has more than one.
+
+Rules:
+- Keep the subject centered, filling about 70% of the grid.
+- Shapes are drawn in order and later shapes cover earlier ones: draw big body shapes first and small details (eyes, spots, windows) last, in a different color from what they sit on.
+- The background is already white. Never draw it.
+- Colors: black, blue.
+- circle: center x,y and radius w. ellipse: center x,y and radii w,h. rect: top-left corner x,y and size w,h. line: from x,y to x2,y2 with thickness w. triangle: corners x,y and x2,y2 and x3,y3.
+- symmetry "mirror" copies the left half (x 0-15) onto the right half. Use it for faces, trees, hearts and anything else that is the same on both sides, and still place every shape as if you were drawing the whole picture. Use "none" for anything facing sideways.
+
+Example for "cat face":
+{"parts":"grey head in the middle, two pointed grey ears on top, pink inside the ears, two dark eyes, small pink nose","symmetry":"mirror","shapes":[
+ {"kind":"triangle","color":"blue","x":5,"y":3,"x2":14,"y2":9,"x3":4,"y3":15},
+ {"kind":"ellipse","color":"blue","x":16,"y":17,"w":11,"h":10},
+ {"kind":"triangle","color":"black","x":7,"y":6,"x2":12,"y2":10,"x3":6,"y3":12},
+ {"kind":"circle","color":"black","x":11,"y":15,"w":2},
+ {"kind":"triangle","color":"black","x":13,"y":20,"x2":18,"y2":20,"x3":15,"y3":23}]}
+
+Example for "pine tree":
+{"parts":"brown trunk at the bottom, three stacked green triangles getting wider downward, yellow star on top, red baubles","symmetry":"mirror","shapes":[
+ {"kind":"rect","color":"black","x":14,"y":25,"w":4,"h":5},
+ {"kind":"triangle","color":"blue","x":16,"y":3,"x2":7,"y2":13,"x3":25,"y3":13},
+ {"kind":"triangle","color":"blue","x":16,"y":8,"x2":5,"y2":19,"x3":27,"y3":19},
+ {"kind":"triangle","color":"blue","x":16,"y":13,"x2":3,"y2":25,"x3":29,"y3":25},
+ {"kind":"circle","color":"blue","x":16,"y":3,"w":2},
+ {"kind":"circle","color":"black","x":11,"y":17,"w":1},
+ {"kind":"circle","color":"black","x":9,"y":22,"w":1}]}
+
+Example for "sailboat":
+{"parts":"brown hull at the bottom, mast in the middle, big red sail right of the mast, smaller yellow sail left of it, blue water under the boat","symmetry":"none","shapes":[
+ {"kind":"triangle","color":"black","x":4,"y":21,"x2":28,"y2":21,"x3":23,"y3":26},
+ {"kind":"triangle","color":"black","x":4,"y":21,"x2":9,"y2":26,"x3":23,"y3":26},
+ {"kind":"line","color":"black","x":16,"y":4,"x2":16,"y2":21,"w":1},
+ {"kind":"triangle","color":"blue","x":17,"y":5,"x2":17,"y2":19,"x3":27,"y3":19},
+ {"kind":"triangle","color":"blue","x":15,"y":8,"x2":15,"y2":19,"x3":7,"y3":19},
+ {"kind":"rect","color":"blue","x":2,"y":27,"w":28,"h":3}]}
+
+Now the motif for: "heart"

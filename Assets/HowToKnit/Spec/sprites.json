@@ -432,5 +432,117 @@
     ],
     "imageType": "Sliced",
     "use": "Selected lesson outline"
+  },
+  "pill_selected": {
+    "size_1x": [
+      48,
+      48
+    ],
+    "border_2x_LBRT": [
+      48,
+      46,
+      48,
+      46
+    ],
+    "imageType": "Sliced",
+    "use": "Selected segmented option (stitch shape, timing window)"
+  },
+  "pill_light": {
+    "size_1x": [
+      48,
+      48
+    ],
+    "border_2x_LBRT": [
+      48,
+      46,
+      48,
+      46
+    ],
+    "imageType": "Sliced",
+    "use": "Unselected segmented option"
+  },
+  "button_selected": {
+    "size_1x": [
+      80,
+      76
+    ],
+    "border_2x_LBRT": [
+      36,
+      36,
+      36,
+      36
+    ],
+    "imageType": "Sliced",
+    "use": "Selected tool / yarn row"
+  },
+  "meter_track": {
+    "size_1x": [
+      40,
+      30
+    ],
+    "border_2x_LBRT": [
+      18,
+      18,
+      18,
+      18
+    ],
+    "imageType": "Sliced",
+    "use": "Practice timing track"
+  },
+  "dot": {
+    "size_1x": [
+      12,
+      12
+    ],
+    "border_2x_LBRT": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "imageType": "Simple",
+    "use": "Attempt dot on a timing track"
+  },
+  "swatch_fill": {
+    "size_1x": [
+      40,
+      40
+    ],
+    "border_2x_LBRT": [
+      22,
+      22,
+      22,
+      22
+    ],
+    "imageType": "Sliced",
+    "use": "Yarn swatch fill - tint with the yarn colour"
+  },
+  "swatch_outline": {
+    "size_1x": [
+      40,
+      40
+    ],
+    "border_2x_LBRT": [
+      22,
+      22,
+      22,
+      22
+    ],
+    "imageType": "Sliced",
+    "use": "Yarn swatch outline (on top of swatch_fill)"
+  },
+  "response_box": {
+    "size_1x": [
+      64,
+      64
+    ],
+    "border_2x_LBRT": [
+      32,
+      32,
+      32,
+      32
+    ],
+    "imageType": "Tiled",
+    "use": "Dashed box for the generator reply"
   }
 }
